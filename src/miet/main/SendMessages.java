@@ -11,13 +11,13 @@ public class SendMessages {
         System.out.println("Введите номер телефона абонента:");
         String newAddress = scan.next();
 
-        Message newMessage = new Message(newText,newAddress);
+        Message newMessage = new Message(newText, newAddress);
 
         Thread.sleep(3000L);
         System.out.println("На номер " + newMessage.getAddress() + " отправлено следующее сообщение:");
         System.out.println("\"" + newMessage.getText() + "\"");
 
-        int rand = (int)(Math.random()*10);
+        int rand = (int) (Math.random() * 10);
         if (rand < 6) {
             newMessage.setStatus("Доставлено");
         } else {
@@ -26,5 +26,6 @@ public class SendMessages {
 
         Thread.sleep(3000L);
         System.out.println("Статус: " + newMessage.getStatus());
+
     }
 }
