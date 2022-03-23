@@ -10,7 +10,7 @@ public class SendMessages {
         System.out.println("Введите текст сообщения:");
         String text = scan.nextLine();
         System.out.println("Введите номер телефона абонента:");
-        String address = scan.nextLine();
+        String address = scan.next();
 
         if (CheckData.checkText(text) && CheckData.checkAddress(address)) {
             Message newMessage = new Message(text,address);

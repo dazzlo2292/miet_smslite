@@ -11,8 +11,9 @@ public class CheckData {
     }
 
     public static boolean checkAddress (String address) {
-        if (address.isEmpty() || address.length() != 10 || address.charAt(0) == '0') {
-            System.err.println("Введён некорретный номер!\n");
+        if (address.length() != 10 || address.charAt(0) == '0') {
+            System.err.println("Введён некорретный номер!");
+            System.out.println("----------\n");
             return false;
         } else {
             return true;
