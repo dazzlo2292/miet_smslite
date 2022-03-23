@@ -8,7 +8,6 @@ public class Message {
     public Message(String text, String address) {
         this.text = text;
         this.address = address;
-        this.status = "NULL";
     }
 
     public String getText() {return text;}
