@@ -2,8 +2,8 @@ package miet.main;
 
 public class CheckData {
     public static boolean checkText (String text) {
-        if (text.isEmpty() || text.length() > 2000) {
-            System.err.println("Введён некорректный текст!\n");
+        if (text.isEmpty() || text.length() > 100) {
+            System.err.println("Текст не введён или его длина более 100 символов!\n");
             return false;
         } else {
             return true;
